@@ -1,0 +1,41 @@
+body {
+background: yellow ;
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
+}
+.just {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+.box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+

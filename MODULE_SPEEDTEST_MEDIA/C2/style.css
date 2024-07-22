@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.mouse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: none;
+    transition: transform 0.2s ease;
+}
+
+.animation {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.animation.show {
+    animation: ripple 1s ease-out forwards;
+}
+
+@keyframes ripple {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
