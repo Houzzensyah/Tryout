@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#username{ 
+    width: 200px;
+    height:  30px;
+    border-radius: 15px ;
+    color: black;
+    border: solid darkgray 3px;
+    background-color: rgb(206, 199, 199);
+
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    opacity: 74%;
+    color: white;
+}
+#gun{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin-top: 289px;
+}
+
+
+#welcome-screen, #countdown-screen, #game-display {
+    text-align: center;
+}
+
+#game-area{ 
+    cursor: url('./Sprites/pointer.png'), auto;
+   background-image: url('/MODULE_CLIENT_MEDIA/Sprites/background.jpg'); 
+   width: 1000px;
+   height: 600px;
+}
+
+#select-level {
+    margin-top: 10px;
+    width: 213px;
+    height:  38px;
+    border-radius: 15px ;
+    color: black;
+    border: solid darkgray 3px;
+    background-color:rgb(206, 199, 199);
+}
+input::placeholder {
+    color: black;
+    text-align: center;
+}
+option {
+    text-align: center;
+}
+
+#pause-popup{
+    position: absolute;
+    width: 305px;
+    height: 205px;
+    padding-top: 60px;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(221, 197, 197);
+    border-radius: 20px;
+    border: solid darkgray;
+}
+#instruction-display{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(57, 55, 55) ;
+    width: 350px;
+    height: 350px;
+    color: white;
+    border-radius: 5px ;
+}
+
+#close-instruction{
+    position: relative;
+    left: 160px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+
+}
+#gun-select {
+    margin-top: 30px;
+}
+#target-select {
+    margin-top: 30px;
+}
+#play-game{
+margin-top: 50px;
+border-radius: 20px;
+width: 200px;
+height: 40px;
+color: white;
+background-color: green;
+}
+#instruction{
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    background-color: brown;
+}
+
+#countdown-screen{
+    position: absolute;
+}
