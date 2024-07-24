@@ -1,0 +1,204 @@
+body {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+#welcome-screen, #countdown-screen, #game-display {
+    text-align: center;
+}
+
+
+input::placeholder{
+    color: black ;
+}
+#username {
+
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: solid gray 3px;
+    background-color: lightgray;
+
+
+}
+
+#play-game[disabled] {
+    opacity: 40%;
+}
+
+#select-level {
+    height: 35px;
+    width: 260px;
+    border-radius: 5px;
+    border: solid gray 3px;
+    background-color: lightgray;
+}
+
+#gun-select {
+    margin: 10px;
+}
+#target-select {
+    margin: 10px;
+}
+
+#play-game {
+    width: 140px;
+    height: 40px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+#instruction {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+}
+
+
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    opacity: 74%;
+    color: white;
+}
+
+
+
+#gun{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-top: 289px;
+    transition: .2s;
+}
+
+
+
+#game-area{
+    cursor: url('./Sprites/pointer.png'), auto;
+    background-image: url('Sprites/background.jpg');
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+}
+
+
+input::placeholder {
+    color: black;
+    text-align: center;
+}
+option {
+    text-align: center;
+}
+
+
+
+#instruction-display{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(57, 55, 55) ;
+    width: 350px;
+    height: 350px;
+    color: white;
+    border-radius: 5px ;
+}
+
+#close-instruction{
+    position: relative;
+    left: 160px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+
+}
+#gun-select {
+    margin-top: 30px;
+}
+#target-select {
+    margin-top: 30px;
+}
+
+
+#countdown-screen{
+    position: absolute;
+}
+
+
+
+#leaderboard {
+    width: 300px;
+    height:600px ;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+.leaderboard-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.leaderboard-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.leaderboard-entry .detail-button {
+    background: yellow;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.boom {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.target {
+    animation: show 0.4s;
+}
+
+@keyframes show {
+    from{
+        transform: scale(0%) translateY(40%);
+    }
+}
+
+#pause-popup {
+    position: absolute;
+    width: 305px;
+    height: 205px;
+    padding-top: 60px;
+    text-align: center;
+    align-items: center;
+    border: gray solid 3px;
+    background-color: lightgray;
+    border-radius: 2px;
+    color: white;
+}
+
+#after-match {
+    position: absolute;
+    width: 305px;
+    height: 205px;
+    padding-top: 60px;
+    text-align: center;
+    align-items: center;
+    border: gray solid 3px;
+    background-color: lightgray;
+    border-radius: 2px;
+    color: white;
+}
