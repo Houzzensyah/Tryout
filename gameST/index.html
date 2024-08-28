@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- welcome-screen -->
+<div id="welcome-screen" >
+    <img src="./Sprites/shooter.png" width="200px" height="150px" id="shooter">
+    <div></div>
+    <input id="username" placeholder="input username" type="text">
+    <div></div>
+    <select id="select-level">
+        <option value="easy">easy</option>
+        <option value="normal">normal</option>
+        <option value="hard">hard</option>
+    </select>
+    <div id="gun-select">
+        <label><input type="radio" name="gunskin" value="gunskin1" checked> <img id="gun img" src="./Sprites/gunskin1.png" alt="gunskin1" width="60px" height="60px"></label>
+        <label><input type="radio" name="gunskin" value="gunskin2" > <img src="./Sprites/gunskin2.png" alt="gunskin2" width="60px" height="60px"></label>
+    </div>
+    <div id="target-select">
+        <label><input type="radio" name="target" value="target1" checked> <img src="./Sprites/target1.png" alt="target1" width="60px" height="60px"></label>
+        <label><input type="radio" name="target" value="target2" > <img src="./Sprites/target2.png" alt="target2" width="60px" height="60px"></label>
+        <label><input type="radio" name="target" value="target3" > <img src="./Sprites/target3.png" alt="target3" width="60px" height="60px"></label>
+    </div>
+
+    <button id="play-game" disabled>Play Game</button>
+    <button id="instruction">Instruction</button>
+</div>
+
+<div id="countdown-screen" style="display: none;">
+    <h2 id="countdown-number">3</h2>
+</div>
+
+<div id="instruction-display" >
+    <button id="close-instruction">X</button>
+    <h2>how to play game</h2>
+    <p>1.input username</p>
+    <p>2.point the pointer</p>
+    <p>3.click to shot</p>
+    <p>4.get as many points as possible</p>
+    <p>5.enjoy!</p>
+</div>
+
+
+
+<div id="game-display" style="display: none;"  >
+    <div id="game-area" >
+        <navbar id="navbar">
+            <h4 id="username-display">  </h4>
+            <h4 id="score-display">Score: </h4>
+            <h4 id="time-display">Time:</h4>
+        </navbar>
+        <img id="gun" src="./Sprites/gunskin1.png">
+
+    </div>
+</div>
+
+<div id="leaderboard" style="display: none">
+    <div class="leaderboard-header">LEADERBOARD</div>
+    <div class="leaderboard-entry">
+        <div class="player-info">ojen ojen - Score: 15</div>
+        <button class="detail-button">Detail</button>
+    </div>
+    <div class="leaderboard-entry">
+        <div class="player-info">mira - Score: 42</div>
+        <button class="detail-button">Detail</button>
+    </div>
+    <div class="leaderboard-entry">
+        <div class="player-info">wolpis carter - Score: 33</div>
+        <button class="detail-button">Detail</button>
+    </div>
+    <div class="leaderboard-entry">
+        <div class="player-info">suis - Score: 12</div>
+        <button class="detail-button">Detail</button>
+    </div>
+</div>
+
+
+<div id="pause-popup" style="display: none;">
+    <h3> Game Paused</h3>
+    <button id="continue">continue</button>
+    <button id="restart">restart</button>
+</div>
+
+<div id="after-match" style="display: none;">
+    <h4 id="username-after-match"> </h4>
+    <h4 id="score-after-match"> </h4>
+    <button id="restart-after-match">restart</button>
+    <button id="savematch-after-match">save match</button>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
